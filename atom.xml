@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.clicklyj.com/"/>
-  <updated>2020-07-07T02:44:00.042Z</updated>
+  <updated>2020-07-07T15:03:19.014Z</updated>
   <id>https://www.clicklyj.com/</id>
   
   <author>
@@ -15,6 +15,123 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>log4j配置说明</title>
+    <link href="https://www.clicklyj.com/2020/07/07/log4j-pei-zhi-shuo-ming/"/>
+    <id>https://www.clicklyj.com/2020/07/07/log4j-pei-zhi-shuo-ming/</id>
+    <published>2020-07-07T15:01:38.000Z</published>
+    <updated>2020-07-07T15:03:19.014Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;%p：输出日志信息的优先级，即DEBUG，INFO，WARN，ERROR，FATAL。&lt;br&gt;%d：输出日志时间点的日期或时间，默认格式为ISO8601，也可以在其后指定格式，如：%d{yyyy/MM/dd HH:mm:ss,SSS}。&lt;br&gt;   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="https://www.clicklyj.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
+    
+      <category term="数据库" scheme="https://www.clicklyj.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL基础</title>
+    <link href="https://www.clicklyj.com/2020/07/07/mysql-ji-chu/"/>
+    <id>https://www.clicklyj.com/2020/07/07/mysql-ji-chu/</id>
+    <published>2020-07-07T14:55:42.000Z</published>
+    <updated>2020-07-07T15:03:11.613Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;数据库的引擎：&quot;&gt;&lt;a href=&quot;#数据库的引擎：&quot; class=&quot;headerlink&quot; title=&quot;数据库的引擎：&quot;&gt;&lt;/a&gt;数据库的引擎：&lt;/h2&gt;&lt;p&gt;​             
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="https://www.clicklyj.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
+    
+      <category term="数据库" scheme="https://www.clicklyj.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaEE基础</title>
+    <link href="https://www.clicklyj.com/2020/07/07/javaee-ji-chu/"/>
+    <id>https://www.clicklyj.com/2020/07/07/javaee-ji-chu/</id>
+    <published>2020-07-07T14:32:42.000Z</published>
+    <updated>2020-07-07T14:54:31.449Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;就业班基础部分&quot;&gt;&lt;a href=&quot;#就业班基础部分&quot; class=&quot;headerlink&quot; title=&quot;就业班基础部分&quot;&gt;&lt;/a&gt;就业班基础部分&lt;/h2&gt;&lt;h2 id=&quot;JavaEE基础部分&quot;&gt;&lt;a href=&quot;#JavaEE基础部分&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://www.clicklyj.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://www.clicklyj.com/tags/Java/"/>
+    
+      <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javaSE基础</title>
+    <link href="https://www.clicklyj.com/2020/07/07/javase-ji-chu/"/>
+    <id>https://www.clicklyj.com/2020/07/07/javase-ji-chu/</id>
+    <published>2020-07-07T14:06:07.000Z</published>
+    <updated>2020-07-07T14:28:40.376Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;YYYY和yyyy一定要分清，YYYY在本周过年时就会显示为次年&lt;/p&gt;
+&lt;h2 id=&quot;Java命名规范：&quot;&gt;&lt;a href=&quot;#Java命名规范：&quot; class=&quot;headerlink&quot; title=&quot;Java命名规范：&quot;&gt;&lt;/a&gt;Java命名规范：&lt;/h2&gt;&lt;p&gt;​
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://www.clicklyj.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://www.clicklyj.com/tags/Java/"/>
+    
+      <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

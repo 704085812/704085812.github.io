@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo">
+    <meta name="keywords" content="log4j配置说明, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo</title>
+    <title>log4j配置说明 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -416,12 +416,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">log4j配置说明</h1>
                 </div>
             </div>
         </div>
@@ -536,12 +536,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                                <span class="chip bg-color">知识集合</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                <span class="chip bg-color">数据库</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                数据库
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -564,7 +581,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    79
+                    483
                 </div>
                 
 
@@ -586,13 +603,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre><code>
-title: 404
-date: 2020-07-07 16:10
-type: "404"
-layout: "404"
-description: "Oops～，我崩溃了！找不到你想要的页面 :("
-</code></pre><script>
+                <p>%p：输出日志信息的优先级，即DEBUG，INFO，WARN，ERROR，FATAL。<br>%d：输出日志时间点的日期或时间，默认格式为ISO8601，也可以在其后指定格式，如：%d{yyyy/MM/dd HH:mm:ss,SSS}。<br>    %d{ABSOLUTE} 只有时间没有日期<br>%r：输出自应用程序启动到输出该log信息耗费的毫秒数。<br>%t：输出产生该日志事件的线程名。<br>%l：输出日志事件的发生位置，相当于%c.%M(%F:%L)的组合，包括类全名、方法、文件名以及在代码中的行数。例如：test.TestLog4j.main(TestLog4j.java:10)。<br>%c：输出日志信息所属的类目，通常就是所在类的全名。<br>%M：输出产生日志信息的方法名。<br>%F：输出日志消息产生时所在的文件名称。<br>%L:：输出代码中的行号。<br>%m:：输出代码中指定的具体日志信息。<br>%n：输出一个回车换行符，Windows平台为”rn”，Unix平台为”n”。<br>%x：输出和当前线程相关联的NDC(嵌套诊断环境)，尤其用到像java servlets这样的多客户多线程的应用中。<br>%%：输出一个”%”字符。<br>另外，还可以在%与格式字符之间加上修饰符来控制其最小长度、最大长度、和文本的对齐方式。如：</p>
+<p>1) c：指定输出category的名称，最小的长度是20，如果category的名称长度小于20的话，默认的情况下右对齐。<br>2)%-20c：”-“号表示左对齐。<br>3)%.30c：指定输出category的名称，最大的长度是30，如果category的名称长度大于30的话，就会将左边多出的字符截掉，但小于30的话也不会补空格。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -625,7 +638,7 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="/about" rel="external nofollow noreferrer">Click</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -635,7 +648,7 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.clicklyj.com/404.html">https://www.clicklyj.com/404.html</a>
+                    <a href="https://www.clicklyj.com/2020/07/07/log4j-pei-zhi-shuo-ming/">https://www.clicklyj.com/2020/07/07/log4j-pei-zhi-shuo-ming/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -648,7 +661,7 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">John Doe</a>
+                    <a href="/about" target="_blank">Click</a>
                     !
                 </span>
             </div>
@@ -672,7 +685,15 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                                    <span class="chip bg-color">知识集合</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                    <span class="chip bg-color">数据库</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -843,26 +864,19 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/2020/07/07/log4j-pei-zhi-shuo-ming/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="log4j配置说明">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">log4j配置说明</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-title: 404
-date: 2020-07-07 16:10
-type: "404"
-layout: "404"
-description: "Oops～，我崩溃了！找不到你想要的页面 :("
-
-        document.qu
+                            这是MySQL基础知识学习过程中记录的小知识点，建议大部分内容一扫而过，供复习用。
                         
                     </div>
                     <div class="publish-info">
@@ -871,13 +885,29 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                        <span class="chip bg-color">知识集合</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">数据库</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -885,29 +915,22 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/2020/07/07/mysql-ji-chu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="MySQL基础">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">MySQL基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-title: 404
-date: 2020-07-07 16:10
-type: "404"
-layout: "404"
-description: "Oops～，我崩溃了！找不到你想要的页面 :("
-
-        document.qu
+                            这是MySQL基础知识学习过程中记录的小知识点，建议大部分内容一扫而过，供复习用。
                         
                     </div>
                     <div class="publish-info">
@@ -916,13 +939,28 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                        <span class="chip bg-color">知识集合</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">数据库</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

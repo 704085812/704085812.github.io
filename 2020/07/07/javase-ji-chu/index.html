@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo">
+    <meta name="keywords" content="javaSE基础, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo</title>
+    <title>javaSE基础 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -416,12 +416,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">javaSE基础</h1>
                 </div>
             </div>
         </div>
@@ -536,12 +536,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                                <span class="chip bg-color">知识集合</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -564,14 +581,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    79
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    8 分
                 </div>
                 
 
@@ -586,13 +603,119 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre><code>
-title: 404
-date: 2020-07-07 16:10
-type: "404"
-layout: "404"
-description: "Oops～，我崩溃了！找不到你想要的页面 :("
-</code></pre><script>
+                <p>YYYY和yyyy一定要分清，YYYY在本周过年时就会显示为次年</p>
+<h2 id="Java命名规范："><a href="#Java命名规范：" class="headerlink" title="Java命名规范："></a>Java命名规范：</h2><p>​    ①项目名称全部用小写testjavaproject</p>
+<p>​       ②包名：将域名反过来写 com.heima</p>
+<p>​       ③类名：大驼峰 且public同名</p>
+<p>​       ④方法名和对象名（变量名）：小驼峰 getName() 方法名由动词+名词组成</p>
+<p>​       ⑤属性名：小驼峰，dbClassName() 形容词+名词</p>
+<p>​       ⑥常量：大写+下划线   MAX_SPEED=50</p>
+<p>​       ⑦属性文件（.properties）：object.a_b_c格式，全部小写，其中object是宿主，a_b_c多个单词下划线分开</p>
+<p>​       ⑧xml文件：全部小写，-符号是其xml的用途说明，类似applicationContext属习惯命名。</p>
+<p>比如springmvc-servlet.xml、workdesk-manager.xml、workdesk-servlet.xml、applicationContext-basic.xml等。</p>
+<p>xml里的内容多个字符间以-隔开，比如param-name，filter-mapping等。</p>
+<p>​    ⑨普通文件例如jsp、js、img等与java规范一样</p>
+<p>​    ⑩数据库命名：表、字段全部大写，多个单词以下划线隔开</p>
+<h2 id="JavaSE："><a href="#JavaSE：" class="headerlink" title="JavaSE："></a>JavaSE：</h2><p>1、扩展的赋值运算符隐含了强制类型转换（+=   /=之类）</p>
+<p>2、&amp;与 |或 ^异或 !非     异或：结果相同false，不同true</p>
+<p>&amp;&amp;短路与    ||短路或    短路：左边判断出来右边就不执行了</p>
+<p>3、三元运算符： 关系表达式 ? 表达式1 : 表达式2;  true执行1false执行2</p>
+<p>4、Java中 java.math和java.lang包下的类不用导包</p>
+<p>5、数据输入使用Scanner类（java.util要导包，java.lang不需要导包）</p>
+<p>​       Scanner sc = new Scanner(System.in);      String str = sc.nextLine()</p>
+<p>随机数使用Random类（）</p>
+<p>6、nextLine 会跳过一行:1 nextLine用在最前面  2 使用nextLine前进行一次无关输入       nextLine互相之间没有问题</p>
+<p>7、流程控制语句：顺序结构、分支结构、循环结构</p>
+<p>分支： if( ){ }else{ }else if( ){ }</p>
+<p>​              Switch() case1: break ;case2: break ;default     case没有对应的break会穿透</p>
+<p>​                  </p>
+<p>循环结构：for  、while  、do……while</p>
+<p>8、死循环的三种格式</p>
+<p>​       for(;;){ }          while(true){ }         do{ }while(true)</p>
+<p>中断循环的几种方式 return（方法结束） break（循环结束）   continue（进行下一次循环）</p>
+<p>9、跳转控制语句break（跳出循环、结束循环）</p>
+<p>​       Continue（跳过本次循环，继续下次循环）只能在循环中使用</p>
+<p>10、\表示转义符        \t水平制表符  \n换行  \b退格     </p>
+<p>水平制表符是补全（8-前面字符的位数%8）的距离</p>
+<p>​       / 表示路径 如&lt; form action=” /path / aa.jsp “</p>
+<p>11、Random产生随机数  int num = r.nextInt(10)+10  产生10-19的随机数</p>
+<p>12、数组静态初始化：int[ ] arr = {1,2,3}    </p>
+<p>​              完整版：int[ ] arr = new int[ ]{1,2,3};</p>
+<p>动态初始化：int[ ] arr = new int[3] </p>
+<p>​       静态初始化：创建时直接将元素确定。</p>
+<p>​       数组使用arr.length</p>
+<p>13、栈内存：储存对象或数组——通过new来创建的</p>
+<p>堆内存：方法运行时使用的内存，例如main方法运行时进入方法栈运行</p>
+<p>14、数组的两个异常：</p>
+<p>​       ArrayIndexOutOfBoundsException：索引越界异常</p>
+<p>​       NullPointerException：空指针异常          给数组一个真正的堆内存空间引用</p>
+<p>15、方法定义：public static 数据类型 方法名 (int a,int b,int c){   return参数}</p>
+<p>​       方法调用：方法名（a，b，c）</p>
+<p>​       形参：方法定义中的参数</p>
+<p>​       实参：方法调用中的参数</p>
+<p>16、方法重载  条件：</p>
+<p>​       ①多个方法在同一个类中</p>
+<p>​       ②多个方法具有相同的方法名</p>
+<p>​       ③多个方法的参数不同，类型不同或数量不同</p>
+<p>注意：重载仅对应方法的定义，与方法的调用无关</p>
+<p>​       重载仅针对同一个类中方法的名称与参数进行识别，与返回值无关，换言之不能通过返回值来判断两个方法是否构成重载</p>
+<p>17、方法参数传递：   </p>
+<p>基本数据类型的参数，形式参数的改变不影响实际参数</p>
+<p>​       每个方法有独立的栈空间，方法运行后弹栈消失</p>
+<p>​       引用类型的参数，形式参数的改变影响实际参数的值</p>
+<p>​              引用数据类型传入的是地址值，内存中会造成两个引用指向一个地址，所以即使方法弹栈，堆内存中的数据也已经是改变后的结果。</p>
+<p>18、debugger看程序执行进度和变量变化  console看程序运行结果，也可以当命令行窗口使用</p>
+<p>​       Step into（F7）遇到子函数后单步执行          </p>
+<p>Step over：遇到子函数后将子函数视为整体，一次执行完毕</p>
+<p>Step out：单步执行到子函数时，用out可以执行完子函数剩下部分，并返回到高一层的函数，跳出子函数</p>
+<p>Step into My Code：可以让debug回到自己的代码并继续向下执行</p>
+<p>19、类和对象：   类是对事物（共同属性或行为）的一种描述，对象则为具体存在的事物</p>
+<p>​       类的定义：①定义类②编写类的成员变量③编写类的成员方法</p>
+<p>​       对象的使用：类名 对象名 = new 类名( )</p>
+<p>​                            对象名.成员变量         对象名.成员方法</p>
+<p>20、多个对象指向同一内存空间，Student s2 = s1， 对任一对象修改时，另一对象获取到的都是修改后的数据</p>
+<p>21、成员变量和局部变量的区别：</p>
+<p>​       ①类中位置：成员变量（类中方法外），局部变量（方法内部或方法声明上）</p>
+<p>②内存中位置：成员变量（堆内存），局部变量（栈内存）</p>
+<p>​       ③生命周期：成员变量（随着对象的存在而存在），局部变量（随着方法调用而存在）</p>
+<p>​       ④初始化值：成员变量（有默认初始化值），局部变量（没有默认值，需要先定义和赋值才能使用）</p>
+<p>​       Boolean：false     字符型：‘\u0000’（空字符）     浮点型：0.0</p>
+<p>​       整数型：0            引用型：String等为null </p>
+<p>22、private关键字（封装）</p>
+<p>​       被private修饰的成员只能在本类进行访问</p>
+<p>​       通过getXxx( )/setXxx(参数)方法可进行设置和调用</p>
+<p>23、this关键字： this指代成员变量    方法同名时，不带this的是形参，不同名时，不带this的是成员变量</p>
+<p>​       this代表当前调用方法的引用，哪个对象调用的方法，this就代表的哪个对象</p>
+<p>24、面向对象三大特征： 封装、继承、多态</p>
+<p>封装思想：是面向对象编程语言对客观世界的模拟。客观世界中成员变量是隐藏在对象内部的，外界无法直接操作</p>
+<p>封装原则：将类的部分信息隐藏在类内部，不允许外部直接访问，而是通过该类提供的方法（get/set）来实现对隐藏信息（private）的操作和访问</p>
+<p>封装好处：通过方法来控制成员变量的操作，提高了代码的安全性；把代码用方法进行封装，提高了代码的复用性</p>
+<p>25、构造方法：主要用于完成对象数据的初始化</p>
+<p>​       没有定义构造方法，系统会给出默认空参构造；定义了有参构造方法系统将不会给默认空参构造，需要手动添加空参构造</p>
+<p>26、接口和api</p>
+<p>​       Api：应用程序编程接口。是JDK中将底层实现封装起来的功能类</p>
+<p>27、String类的特点：</p>
+<p>①字符串不可变，他们的值在创建后不能被更改，</p>
+<p>②虽然String的值是不可变的，但是他们可以被共享 </p>
+<p>③字符串效果上相当于字符数组（char[]），但是底层原理是字节数组（byte[]）</p>
+<p>通过new（构造方法）创建的字符串对象，每一次new都会申请一个内存空间，虽然内容相同但是地址值不同</p>
+<p>通过“ ”（直接复制）方式给出的字符串，只要字符序列相同，无论在程序中出现几次，JVM都会创建一个String对象，并在字符串池中维护</p>
+<p>28、 == 号的作用：</p>
+<p>​       比较基本数据类型：比较的是具体的值</p>
+<p>​       比较引用数据类型：比较的是对象的地址值</p>
+<p>​       equals方法：比较两个对象的内容是否相同，区分大小写</p>
+<p>29、遍历字符串Public char charAt（int index）方法获取到索引处字符</p>
+<p>30、统计字符次数案例：A=65 a=97</p>
+<p>31、StringBuilder类 创建可变的字符串对象       构造：根据String创建可变字符串</p>
+<p>方法：append 添加数据          reverse 返回反转的字符序列           toString转成String</p>
+<p>aaaa.equalsIgnoreCase(AAAA)   string的不区分大小写比较方法</p>
+<p>toLowerCase字符串中的字符都转为小写</p>
+<p>stratWith(“0”) 以字符0开头，是则true，否则false</p>
+<p>32、ArrayList类：底层由数组实现，存储空间可变</p>
+<p>​       使用泛型约束元素类型      ArrayList<string> array = new ArrayList<string>();</string></string></p>
+<p>​       Size返回集合中元素个数          add添加元素       remove删除指定位置的元素</p>
+<p>Set修改指定位置的元素</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -625,7 +748,7 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="/about" rel="external nofollow noreferrer">Click</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -635,7 +758,7 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.clicklyj.com/404.html">https://www.clicklyj.com/404.html</a>
+                    <a href="https://www.clicklyj.com/2020/07/07/javase-ji-chu/">https://www.clicklyj.com/2020/07/07/javase-ji-chu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -648,7 +771,7 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">John Doe</a>
+                    <a href="/about" target="_blank">Click</a>
                     !
                 </span>
             </div>
@@ -672,7 +795,15 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                                    <span class="chip bg-color">知识集合</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -838,46 +969,53 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/2020/07/07/javaee-ji-chu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="JavaEE基础">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">JavaEE基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-title: 404
-date: 2020-07-07 16:10
-type: "404"
-layout: "404"
-description: "Oops～，我崩溃了！找不到你想要的页面 :("
-
-        document.qu
+                            这是javaEE基础知识学习过程中记录的小知识点，建议大部分内容一扫而过，供复习用。
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-07
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                        <span class="chip bg-color">知识集合</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -885,29 +1023,22 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/2020/07/07/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-title: 404
-date: 2020-07-07 16:10
-type: "404"
-layout: "404"
-description: "Oops～，我崩溃了！找不到你想要的页面 :("
-
-        document.qu
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                         
                     </div>
                     <div class="publish-info">
@@ -922,7 +1053,6 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
