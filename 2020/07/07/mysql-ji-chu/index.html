@@ -574,7 +574,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-07
+                    2020-07-10
                 </div>
                 
 
@@ -833,7 +833,7 @@
 <p>​       ②不可重复读：一个事务两次读取到的数据内容不一致，是事务update时引发的问题</p>
 <p>​       ③幻读：一个事务两次读到的数据数量不一致，是insert或delete时引发的问题</p>
 <p>​       MYSQL的四种隔离级别（解决并发问题）</p>
-<p>​                              <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594133914000.png" alt="1594133914000">                                                  </p>
+<p>​                              <img src="/2020/07/07/mysql-ji-chu/C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594133914000.png" alt="1594133914000">                                                  </p>
 <p>​       相关操作：</p>
 <p>​       select @@tx_isolation ：查询隔离级别</p>
 <p>​       set global transaction isolation level 级别字符串：设置隔离级别</p>
@@ -934,22 +934,22 @@
 <p>​       ②需要关闭资源的方法<br>​               提取出close方法，并且添加判断非空的条件</p>
 <p>​       因DDL、DML和DQL需要的对象不同，所以需要使用方法重载来创建两个或三个不同参数的方法</p>
 <p>​       直接使用相对路径进行jdbc.properties的读取时出现了报错</p>
-<p>​           <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134011750.png" alt="1594134011750">     </p>
-<p>​           <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134018360.png" alt="1594134018360">      </p>
+<p>​           <img src="/2020/07/07/mysql-ji-chu/C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134011750.png" alt="1594134011750">     </p>
+<p>​           <img src="/2020/07/07/mysql-ji-chu/C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134018360.png" alt="1594134018360">      </p>
 <p>​              显示找不到文件，此时如果修改成绝对路径则可以正常运行</p>
 <p>​              这时推荐使用类加载器ClassLoader进行动态的读取资源，</p>
 <p>​                     使用字节码文件可获得类加载器Utils.class.ClassLoader()</p>
 <p>​                     使用类加载器可以将文件目录转化成URL资源，该目录是以src为基准的</p>
 <p>​                     将URL资源转化成对应的路径字符串即可使用</p>
 <p>​                     修改为如下代码即可执行成功</p>
-<p>​           <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134026935.png" alt="1594134026935">      </p>
+<p>​           <img src="/2020/07/07/mysql-ji-chu/C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134026935.png" alt="1594134026935">      </p>
 <p>​       执行Demo时出现了刁钻的报错</p>
-<p>​           <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134034364.png" alt="1594134034364">      </p>
+<p>​           <img src="/2020/07/07/mysql-ji-chu/C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134034364.png" alt="1594134034364">      </p>
 <p>​              错误代码为如下，修改后依然错误</p>
-<p>​           <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134042223.png" alt="1594134042223">      </p>
+<p>​           <img src="/2020/07/07/mysql-ji-chu/C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134042223.png" alt="1594134042223">      </p>
 <p>​              原因是List集合在堆中并没有自己的内存，即使是new list也没有内存，必须有自己的实例化对象</p>
 <p>​              最终修改如下</p>
-<p>​           <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134048133.png" alt="1594134048133">      </p>
+<p>​           <img src="/2020/07/07/mysql-ji-chu/C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594134048133.png" alt="1594134048133">      </p>
 <p>​              ArrayList()与List()的区别在于，List是接口，而ArrayList为具体实现类，有对象去占用堆内存。</p>
 <p>​       注意这里sql字符串的拼接</p>
 <p>​       String sql = “select * from user where username = ‘“+username+”‘ and password = ‘“+password+”‘ “;</p>

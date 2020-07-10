@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ClickSpace</title>
   
-  <subtitle>����������</subtitle>
+  <subtitle>所见即所得</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.clicklyj.com/"/>
-  <updated>2020-07-10T03:33:32.164Z</updated>
+  <updated>2020-07-10T07:47:03.174Z</updated>
   <id>https://www.clicklyj.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.clicklyj.com/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/"/>
     <id>https://www.clicklyj.com/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/</id>
     <published>2020-07-09T02:53:30.000Z</published>
-    <updated>2020-07-10T03:33:32.164Z</updated>
+    <updated>2020-07-10T07:47:03.174Z</updated>
     
     <summary type="html">
     
@@ -36,12 +36,12 @@
     </summary>
     
     
-      <category term="Java" scheme="https://www.clicklyj.com/categories/Java/"/>
+      <category term="微信小程序" scheme="https://www.clicklyj.com/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
     
       <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
     
-      <category term="Java" scheme="https://www.clicklyj.com/tags/Java/"/>
+      <category term="微信小程序" scheme="https://www.clicklyj.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
@@ -111,7 +111,7 @@
     <link href="https://www.clicklyj.com/2020/07/07/mysql-ji-chu/"/>
     <id>https://www.clicklyj.com/2020/07/07/mysql-ji-chu/</id>
     <published>2020-07-07T14:55:42.000Z</published>
-    <updated>2020-07-07T15:03:11.613Z</updated>
+    <updated>2020-07-10T07:45:16.021Z</updated>
     
     <summary type="html">
     
@@ -140,7 +140,7 @@
     <link href="https://www.clicklyj.com/2020/07/07/javaee-ji-chu/"/>
     <id>https://www.clicklyj.com/2020/07/07/javaee-ji-chu/</id>
     <published>2020-07-07T14:32:42.000Z</published>
-    <updated>2020-07-07T14:54:31.449Z</updated>
+    <updated>2020-07-10T07:44:51.660Z</updated>
     
     <summary type="html">
     
@@ -169,7 +169,7 @@
     <link href="https://www.clicklyj.com/2020/07/07/javase-ji-chu/"/>
     <id>https://www.clicklyj.com/2020/07/07/javase-ji-chu/</id>
     <published>2020-07-07T14:06:07.000Z</published>
-    <updated>2020-07-07T14:28:40.376Z</updated>
+    <updated>2020-07-10T07:44:40.112Z</updated>
     
     <summary type="html">
     
