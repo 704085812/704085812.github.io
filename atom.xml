@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ClickSpace</title>
   
-  
+  <subtitle>����������</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.clicklyj.com/"/>
-  <updated>2020-07-09T02:05:47.173Z</updated>
+  <updated>2020-07-10T03:33:32.164Z</updated>
   <id>https://www.clicklyj.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>找不到可用ip地址问题解决</title>
-    <link href="https://www.clicklyj.com/2020/07/09/zhao-bu-dao-ke-yong-ip-di-zhi-wen-ti-jie-jue/"/>
-    <id>https://www.clicklyj.com/2020/07/09/zhao-bu-dao-ke-yong-ip-di-zhi-wen-ti-jie-jue/</id>
-    <published>2020-07-09T02:05:47.000Z</published>
-    <updated>2020-07-09T02:05:47.173Z</updated>
+    <title>微信小程序初体验</title>
+    <link href="https://www.clicklyj.com/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/"/>
+    <id>https://www.clicklyj.com/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/</id>
+    <published>2020-07-09T02:53:30.000Z</published>
+    <updated>2020-07-10T03:33:32.164Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,51 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;h2 id=&quot;开发工具&quot;&gt;&lt;a href=&quot;#开发工具&quot; class=&quot;headerlink&quot; title=&quot;开发工具&quot;&gt;&lt;/a&gt;开发工具&lt;/h2&gt;&lt;p&gt;本次初学，采用的是微信公众平台的稳定版 Stable Build
         
       
     
     </summary>
     
     
+      <category term="Java" scheme="https://www.clicklyj.com/categories/Java/"/>
+    
+    
+      <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
+    
+      <category term="Java" scheme="https://www.clicklyj.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>以太网没有有效的ip设置问题解决</title>
+    <link href="https://www.clicklyj.com/2020/07/09/yi-tai-wang-mei-you-you-xiao-de-ip-she-zhi-wen-ti-jie-jue/"/>
+    <id>https://www.clicklyj.com/2020/07/09/yi-tai-wang-mei-you-you-xiao-de-ip-she-zhi-wen-ti-jie-jue/</id>
+    <published>2020-07-09T02:05:47.000Z</published>
+    <updated>2020-07-09T03:11:10.369Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;首先通过“有效的ip”推测为DHCP出现问题&lt;/p&gt;
+&lt;p&gt;尝试在适配器中禁用/重启，检查自动配置ip的设置，没有问题&lt;/p&gt;
+&lt;p&gt;Win+R运行——services.msc打开服务界面&lt;/p&gt;
+&lt;p&gt;检查wired auto config服务和WLan
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Bugs" scheme="https://www.clicklyj.com/categories/Bugs/"/>
+    
+    
+      <category term="Windows配置" scheme="https://www.clicklyj.com/tags/Windows%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="疑难杂症" scheme="https://www.clicklyj.com/tags/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/"/>
     
   </entry>
   
@@ -48,7 +82,7 @@
     <link href="https://www.clicklyj.com/2020/07/07/log4j-pei-zhi-shuo-ming/"/>
     <id>https://www.clicklyj.com/2020/07/07/log4j-pei-zhi-shuo-ming/</id>
     <published>2020-07-07T15:01:38.000Z</published>
-    <updated>2020-07-07T15:03:19.014Z</updated>
+    <updated>2020-07-10T03:33:13.601Z</updated>
     
     <summary type="html">
     

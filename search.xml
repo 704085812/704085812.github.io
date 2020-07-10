@@ -4,13 +4,54 @@
   
     
     <entry>
-      <title>找不到可用ip地址问题解决</title>
-      <link href="/2020/07/09/zhao-bu-dao-ke-yong-ip-di-zhi-wen-ti-jie-jue/"/>
-      <url>/2020/07/09/zhao-bu-dao-ke-yong-ip-di-zhi-wen-ti-jie-jue/</url>
+      <title>微信小程序初体验</title>
+      <link href="/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/"/>
+      <url>/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/</url>
       
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h2><p>本次初学，采用的是微信公众平台的稳定版 Stable Build 1.03.2006090工具，使用注册了管理员账号的微信登录。</p><p>由于个人账号已加入河间信息服务公司的开发者团队，本次使用的是我的工作微信账号。</p><p>APPID为微信公众平台小程序页面【设置】中自动生成。</p><p><img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594268139570.png" alt="1594268139570"></p><p>配置云开发控制台</p><p><img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594268978174.png" alt="1594268978174"></p><h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><ul><li><p>.js 逻辑文件</p></li><li><p>.json 配置文件</p></li><li><p>.wxss 类CSS的样式文件</p></li><li><p>.wxml 类HTML的结构文件</p></li></ul><p>  pages目录存放小程序的页面文件，每一个页面文件如index都有其自己的文件夹。 </p><p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594280898471.png" alt="1594280898471"></p><p>  app.json文件是全局配置文件，管理着所有目录和文件的路径，这里的每个页面包括其样式和配置文件都视作一个整体，不用写明后缀</p><p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594281049820.png" alt="1594281049820"></p><p>  ‘’window‘’里的配置是定义小程序最上方<strong>导航栏</strong>的字体颜色和背景颜色等信息，可在微信官方文档的框架中找到具体的属性值释义。</p><p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594286470615.png" alt="1594286470615"></p><p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594286505957.png" alt="1594286505957"></p><p>  app.json中还有“tabBar”属性，与“Window”平级，该属性针对的是最下方的标签栏的配置。图标可以去阿里图标库找icon后缀或png后缀的图标</p><p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594351044041.png" alt="1594351044041"></p><p>  app.js文件是小程序的入口程序</p><p>  sitemap.json 文件配置小程序页面是否能被微信引用，这一个之后再详解</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识集合 </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>以太网没有有效的ip设置问题解决</title>
+      <link href="/2020/07/09/yi-tai-wang-mei-you-you-xiao-de-ip-she-zhi-wen-ti-jie-jue/"/>
+      <url>/2020/07/09/yi-tai-wang-mei-you-you-xiao-de-ip-she-zhi-wen-ti-jie-jue/</url>
+      
+        <content type="html"><![CDATA[<p>首先通过“有效的ip”推测为DHCP出现问题</p><p>尝试在适配器中禁用/重启，检查自动配置ip的设置，没有问题</p><p>Win+R运行——services.msc打开服务界面</p><p>检查wired auto config服务和WLan autoconfig服务是否正常运行，发现wired auto config服务未运行。这两个服务均应保证【启动类型：自动】</p><p>启动服务后，在适配器中禁用以太网卡</p><p>打开cmd，输入 netsh winsock reset，重置Winsock目录</p><p>重置后重新启动计算机，启用网卡，此时成功联网。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Bugs </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows配置 </tag>
+            
+            <tag> 疑难杂症 </tag>
+            
+        </tags>
       
     </entry>
     

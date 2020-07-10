@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="找不到可用ip地址问题解决, ClickSpace">
+    <meta name="keywords" content="微信小程序初体验, ClickSpace">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>找不到可用ip地址问题解决 | ClickSpace</title>
+    <title>微信小程序初体验 | ClickSpace</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -416,12 +416,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">找不到可用ip地址问题解决</h1>
+                    <h1 class="description center-align post-title">微信小程序初体验</h1>
                 </div>
             </div>
         </div>
@@ -536,12 +536,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                                <span class="chip bg-color">知识集合</span>
+                            </a>
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -557,14 +574,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-09
+                    2020-07-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    417
                 </div>
                 
 
@@ -586,7 +603,34 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h2 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h2><p>本次初学，采用的是微信公众平台的稳定版 Stable Build 1.03.2006090工具，使用注册了管理员账号的微信登录。</p>
+<p>由于个人账号已加入河间信息服务公司的开发者团队，本次使用的是我的工作微信账号。</p>
+<p>APPID为微信公众平台小程序页面【设置】中自动生成。</p>
+<p><img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594268139570.png" alt="1594268139570"></p>
+<p>配置云开发控制台</p>
+<p><img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594268978174.png" alt="1594268978174"></p>
+<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><ul>
+<li><p>.js 逻辑文件</p>
+</li>
+<li><p>.json 配置文件</p>
+</li>
+<li><p>.wxss 类CSS的样式文件</p>
+</li>
+<li><p>.wxml 类HTML的结构文件</p>
+</li>
+</ul>
+<p>  pages目录存放小程序的页面文件，每一个页面文件如index都有其自己的文件夹。 </p>
+<p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594280898471.png" alt="1594280898471"></p>
+<p>  app.json文件是全局配置文件，管理着所有目录和文件的路径，这里的每个页面包括其样式和配置文件都视作一个整体，不用写明后缀</p>
+<p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594281049820.png" alt="1594281049820"></p>
+<p>  ‘’window‘’里的配置是定义小程序最上方<strong>导航栏</strong>的字体颜色和背景颜色等信息，可在微信官方文档的框架中找到具体的属性值释义。</p>
+<p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594286470615.png" alt="1594286470615"></p>
+<p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594286505957.png" alt="1594286505957"></p>
+<p>  app.json中还有“tabBar”属性，与“Window”平级，该属性针对的是最下方的标签栏的配置。图标可以去阿里图标库找icon后缀或png后缀的图标</p>
+<p>  <img src="C:%5CUsers%5CClick%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1594351044041.png" alt="1594351044041"></p>
+<p>  app.js文件是小程序的入口程序</p>
+<p>  sitemap.json 文件配置小程序页面是否能被微信引用，这一个之后再详解</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -629,7 +673,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.clicklyj.com/2020/07/09/zhao-bu-dao-ke-yong-ip-di-zhi-wen-ti-jie-jue/">https://www.clicklyj.com/2020/07/09/zhao-bu-dao-ke-yong-ip-di-zhi-wen-ti-jie-jue/</a>
+                    <a href="https://www.clicklyj.com/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/">https://www.clicklyj.com/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -666,7 +710,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                                    <span class="chip bg-color">知识集合</span>
+                                </a>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -837,22 +889,19 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/07/09/zhao-bu-dao-ke-yong-ip-di-zhi-wen-ti-jie-jue/">
+                <a href="/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="找不到可用ip地址问题解决">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="微信小程序初体验">
                         
-                        <span class="card-title">找不到可用ip地址问题解决</span>
+                        <span class="card-title">微信小程序初体验</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            这是java基础知识学习过程中记录的小知识点，建议大部分内容一扫而过，供复习用。
                         
                     </div>
                     <div class="publish-info">
@@ -861,13 +910,29 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Click
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
+                        <span class="chip bg-color">知识集合</span>
+                    </a>
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -878,31 +943,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/07/log4j-pei-zhi-shuo-ming/">
+                <a href="/2020/07/09/yi-tai-wang-mei-you-you-xiao-de-ip-she-zhi-wen-ti-jie-jue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="log4j配置说明">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="以太网没有有效的ip设置问题解决">
                         
-                        <span class="card-title">log4j配置说明</span>
+                        <span class="card-title">以太网没有有效的ip设置问题解决</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是MySQL基础知识学习过程中记录的小知识点，建议大部分内容一扫而过，供复习用。
+                            电脑突然死机，重启后提示找不到可用ip。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
+                            <a href="/categories/Bugs/" class="post-category">
+                                    Bugs
                                 </a>
                             
                             
@@ -912,12 +977,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                        <span class="chip bg-color">数据库</span>
+                    <a href="/tags/Windows%E9%85%8D%E7%BD%AE/">
+                        <span class="chip bg-color">Windows配置</span>
                     </a>
                     
-                    <a href="/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/">
-                        <span class="chip bg-color">知识集合</span>
+                    <a href="/tags/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/">
+                        <span class="chip bg-color">疑难杂症</span>
                     </a>
                     
                 </div>
@@ -1107,7 +1172,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21.6k</span>&nbsp;字
+                class="white-color">22.2k</span>&nbsp;字
             
             
             
