@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>hexo博客图片不显示的解决办法</title>
+      <link href="/2020/07/11/hexo-bo-ke-tu-pian-bu-xian-shi-de-jie-jue-ban-fa/"/>
+      <url>/2020/07/11/hexo-bo-ke-tu-pian-bu-xian-shi-de-jie-jue-ban-fa/</url>
+      
+        <content type="html"><![CDATA[<p>近日学习了hexo博客的搭建和简单实用方法，尝试着写了几篇文章，体验良好，事后浏览时竟发现文章中的图片没有显示出来，十分尴尬，遂作处理</p><p>虽然解决了但以前的文章还要全部替换一次，又是个不小的工作量</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>1、初步排查到问题不是博客框架的问题，检查到文章的图片内容是直接插入到文章中的，而markdown文件中的图片地址是引用的绝对路径，云端博客读取文件内容时不能通过绝对路径读取到图片，所以解决办法显而易见</p><p>2、为hexo安装图片上传的插件</p><pre class=" language-shell"><code class="language-shell">npm install https://github.com/CodeFalling/hexo-asset-image --save</code></pre><p>3、本次使用的markdown文档编辑器为Typora。在Typora中进行设置。</p><p>​    编辑——图片设置——全局图像设置</p><p><img src="/2020/07/11/hexo-bo-ke-tu-pian-bu-xian-shi-de-jie-jue-ban-fa/1594540828232.png" alt="1594540828232"></p><p>4、在hexo博客的_config.yml文件中，搜索到post_asset_folder，修改为true</p><p>5、使用hexo new新建文章时，创建的文件增加了一个同名文件夹</p><p><img src="/2020/07/11/hexo-bo-ke-tu-pian-bu-xian-shi-de-jie-jue-ban-fa/1594541141504.png" alt="1594541141504"></p><p>6、文章中插入图片时，可以使用如下方式，或7中的方式进行添加</p><pre class=" language-undefined"><code class="language-undefined">![示例](./Hexo图片不显示的解决方法/图片名.png)</code></pre><p>7、或如5中图片所示，进行设置后保存图片会自动保存在（文章名.assets）文件夹下，这时只需要改名，将后缀去掉，就会自动合并文件夹，然后ctrl+F，全局替换掉后缀名即可</p><p><img src="/2020/07/11/hexo-bo-ke-tu-pian-bu-xian-shi-de-jie-jue-ban-fa/1594541447985.png" alt="1594541447985"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识集合 </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IDEA不使用骨架创建maven项目</title>
+      <link href="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/"/>
+      <url>/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/</url>
+      
+        <content type="html"><![CDATA[<p>使用IDEA创建maven项目时往往遇到是否选择骨架的问题，如果选择骨架，经常会出现</p><h2 id="创建流程"><a href="#创建流程" class="headerlink" title="创建流程"></a>创建流程</h2><p>1、创建项目，选择maven项目，不勾选任何骨架，直接下一步</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594459507570.png" alt="1594459507570"></p><p>2、输入组织名称和项目名称</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594521859642.png" alt="1594521859642"></p><p>3、项目文件目录会自动根据项目名生成，确认一下继续</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594522072542.png" alt="1594522072542"></p><p>4、创建完成后，可以看到不使用maven骨架创建maven项目，是缺少webapp等目录的</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594522314234.png" alt="1594522314234"></p><p>5、手动补全目录。可以看到即使创建了对应文件夹，IDEA并没有将其识别成web资源目录</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594522649322.png" alt="1594522649322"></p><p>6、手动设置识别为web项目根目录</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594522974383.png" alt="1594522974383"></p><p>7、注意这里的图标颜色，webapp图标要有小圆点，web.xml的图标与普通xml也不相同</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594523668907.png" alt="1594523668907"></p><p>8、test文件夹下还缺少一个resources目录，手动添加，并右键标记为资源目录</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594523783406.png" alt="1594523783406"></p><p>9、目录添加完成，要再将项目添加为tomcat项目</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594523847312.png" alt="1594523847312"></p><p>10、创建一个index页面，配置tomcat，即可在localhost：8080访问到了。</p><p><img src="/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/1594523999167.png" alt="1594523999167"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识集合 </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>微信小程序初体验</title>
       <link href="/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/"/>
       <url>/2020/07/09/wei-xin-xiao-cheng-xu-chu-ti-yan/</url>

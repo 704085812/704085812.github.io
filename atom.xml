@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.clicklyj.com/"/>
-  <updated>2020-07-10T07:47:03.174Z</updated>
+  <updated>2020-07-12T08:12:08.843Z</updated>
   <id>https://www.clicklyj.com/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客图片不显示的解决办法</title>
+    <link href="https://www.clicklyj.com/2020/07/11/hexo-bo-ke-tu-pian-bu-xian-shi-de-jie-jue-ban-fa/"/>
+    <id>https://www.clicklyj.com/2020/07/11/hexo-bo-ke-tu-pian-bu-xian-shi-de-jie-jue-ban-fa/</id>
+    <published>2020-07-11T09:29:30.000Z</published>
+    <updated>2020-07-12T08:12:08.843Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;近日学习了hexo博客的搭建和简单实用方法，尝试着写了几篇文章，体验良好，事后浏览时竟发现文章中的图片没有显示出来，十分尴尬，遂作处理&lt;/p&gt;
+&lt;p&gt;虽然解决了但以前的文章还要全部替换一次，又是个不小的工作量&lt;/p&gt;
+&lt;h2 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://www.clicklyj.com/categories/Java/"/>
+    
+    
+      <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
+    
+      <category term="Java" scheme="https://www.clicklyj.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IDEA不使用骨架创建maven项目</title>
+    <link href="https://www.clicklyj.com/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/"/>
+    <id>https://www.clicklyj.com/2020/07/11/idea-bu-shi-yong-gu-jia-chuang-jian-maven-xiang-mu/</id>
+    <published>2020-07-11T08:58:16.000Z</published>
+    <updated>2020-07-12T07:30:33.860Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;使用IDEA创建maven项目时往往遇到是否选择骨架的问题，如果选择骨架，经常会出现&lt;/p&gt;
+&lt;h2 id=&quot;创建流程&quot;&gt;&lt;a href=&quot;#创建流程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://www.clicklyj.com/categories/Java/"/>
+    
+    
+      <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
+    
+      <category term="Java" scheme="https://www.clicklyj.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序初体验</title>
