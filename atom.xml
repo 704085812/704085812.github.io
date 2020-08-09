@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.clicklyj.com/"/>
-  <updated>2020-07-12T08:12:08.843Z</updated>
+  <updated>2020-08-06T08:06:30.648Z</updated>
   <id>https://www.clicklyj.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dubbo和Zookeeper的使用</title>
+    <link href="https://www.clicklyj.com/2020/08/06/dubbo-he-zookeeper-de-shi-yong/"/>
+    <id>https://www.clicklyj.com/2020/08/06/dubbo-he-zookeeper-de-shi-yong/</id>
+    <published>2020-08-06T08:06:30.000Z</published>
+    <updated>2020-08-06T08:06:30.648Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://www.clicklyj.com/categories/Java/"/>
+    
+    
+      <category term="知识集合" scheme="https://www.clicklyj.com/tags/%E7%9F%A5%E8%AF%86%E9%9B%86%E5%90%88/"/>
+    
+      <category term="Java" scheme="https://www.clicklyj.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客图片不显示的解决办法</title>
